@@ -3,19 +3,19 @@ SUMMARY
 
 This extension provides a "Print Invoice" button on the Admin Orders view screen which generates a PDF of the order details.
 
- 
+
 INSTALLATION
 ============
 
 1. The gem relies only on the prawn gem, to install you need to add the following lines to your Gemfile
 
-    gem 'spree_print_invoice' , :git => 'git://github.com/spree/spree_print_invoice.git'
+    gem 'spree_print_invoice' , :git => 'git://github.com/codeponpon/spree_print_invoice.git'
 
 2. run bundler
 
     bundle install
-  
-3. Enjoy! now displays the items variant options 
+
+3. Enjoy! now displays the items variant options
 
 Configuration
 ==============
@@ -30,7 +30,7 @@ Configuration
 
 4. Set :suppress_anonymous_address option to get blank addresses for anonymous email addresses (as created by my spree_last_address extension for empty/unknown user info)
 
-5. Enable packaging slips, by setting 
+5. Enable packaging slips, by setting
 
   Spree::PrintInvoice::Config.set(:print_buttons => "invoice,packaging_slip")  #comma separated list
 

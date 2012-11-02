@@ -4,13 +4,13 @@ gem_root = spec.gem_dir
 fonts_path = gem_root + "/lib/data/fonts/"
 
 font_families.update("Angsa" => {
-  :normal => "#{fonts_path} + Angsa.ttf",
-  :bold => "#{fonts_path} + /Angsab.ttf"
+  :normal => fonts_path + "Angsa.ttf",
+  :bold => fonts_path + "Angsab.ttf"
 })
 
 font_families.update("AngsaUPC" => {
-  :normal => "#{fonts_path} + AngsaUPC.ttf",
-  :bold => "#{fonts_path} + /AngsabUPC.ttf"
+  :normal => fonts_path + "AngsaUPC.ttf",
+  :bold => fonts_path + "AngsabUPC.ttf"
 })
 
 bill_address = @order.bill_address

@@ -1,13 +1,13 @@
 # Address Stuff
 
 font_families.update("Angsa" => {
-  :normal => "#{$LOAD_PATH[0]}/data/fonts/Angsa.ttf",
-  :bold => "#{$LOAD_PATH[0]}/data/fonts/Angsab.ttf"
+  :normal => "#{File.dirname(__FILE__)} + /lib/data/fonts/Angsa.ttf",
+  :bold => "#{File.dirname(__FILE__)} + /lib/data/fonts/Angsab.ttf"
 })
 
 font_families.update("AngsaUPC" => {
-  :normal => "#{$LOAD_PATH[0]}/data/fonts/AngsaUPC.ttf",
-  :bold => "#{$LOAD_PATH[0]}/data/fonts/AngsabUPC.ttf"
+  :normal => "#{File.dirname(__FILE__)} + /lib/data/fonts/AngsaUPC.ttf",
+  :bold => "#{File.dirname(__FILE__)} + /lib/data/fonts/AngsabUPC.ttf"
 })
 
 bill_address = @order.bill_address

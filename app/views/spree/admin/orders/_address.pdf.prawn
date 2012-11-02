@@ -1,13 +1,16 @@
 # Address Stuff
+spec = Gem::Specification.find_by_name("spree_print_invoice")
+gem_root = spec.gem_dir
+fonts_path = gem_root + "/lib/data/fonts/"
 
 font_families.update("Angsa" => {
-  :normal => "#{File.dirname(__FILE__)} + /lib/data/fonts/Angsa.ttf",
-  :bold => "#{File.dirname(__FILE__)} + /lib/data/fonts/Angsab.ttf"
+  :normal => "#{fonts_path} + Angsa.ttf",
+  :bold => "#{fonts_path} + /Angsab.ttf"
 })
 
 font_families.update("AngsaUPC" => {
-  :normal => "#{File.dirname(__FILE__)} + /lib/data/fonts/AngsaUPC.ttf",
-  :bold => "#{File.dirname(__FILE__)} + /lib/data/fonts/AngsabUPC.ttf"
+  :normal => "#{fonts_path} + AngsaUPC.ttf",
+  :bold => "#{fonts_path} + /AngsabUPC.ttf"
 })
 
 bill_address = @order.bill_address
